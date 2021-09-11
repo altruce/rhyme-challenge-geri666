@@ -15,6 +15,11 @@ application {
     mainClass = "com.altruce.challenge.Main"
 }
 
+// changed encoding, hope this doesn't disqualify me :)
+apply plugin: 'java'
+compileJava {options.ecoding = "UTF-8"}
+compileJavaTest {options.ecoding = "UTF-8"}
+
 test {
     useJUnitPlatform()
     testLogging {
