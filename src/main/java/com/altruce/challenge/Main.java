@@ -18,10 +18,7 @@ public class Main {
             JSONReader jsonReader = new JSONReader();
             JSONObject rhymes = jsonReader.readFile("src/main/resources/rhymes.json");
             String input = String.join(" ", args);
-            // String input = "Als ich aufsah\nwar niemand mehr _\n\nEs war, als hätt' der
-            // Himmel\ndie Erde still geküsst,\nDass sie im _\nVon Ihm nun träumen _\n\nDie
-            // Luft ging durch die Felder,\nDie Ähren wogten sacht,\nEs rauschten leis' die
-            // _\nSo sternklar war die _";
+            
             BufferedReader bufReader = new BufferedReader(new StringReader(input));
             String rhyme = null;
             String line = null;
